@@ -1,0 +1,20 @@
+Set 0 of grades calculated
+number of As: 4
+number of Bs: 4
+number of Cs: 4
+number of Ds: 4
+number of Fs: 2
+Highest score: 100
+lowest score: 40
+The avrage score is: 76.11 
+Set 1 of grades calculated
+no grades to average
+Set 2 of grades calculated
+number of As: 5
+number of Bs: 4
+number of Cs: 3
+number of Ds: 2
+number of Fs: 1
+Highest score: 100
+lowest score: 52
+The avrage score is: 82.13 
