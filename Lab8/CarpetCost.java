@@ -1,10 +1,15 @@
+/*
+ * CarpetCost 
+ */
+
 public class CarpetCost {
     private RoomSize size = new RoomSize();
     private double costPerSqFt;
 
     public CarpetCost(RoomSize area, double cost)
     {
-        
+        size = area;
+        costPerSqFt = cost;
     }
 
     public double getCost()
