@@ -22,21 +22,23 @@ public class WorkWeek {
         }
     }
 
+    //@return Prints weather prameter day is before, the same, or after the exec object day.
     public void compareDays(WorkWeek inWorkWeek)
     {
         if(day.compareTo(inWorkWeek.getDay())>0)
         {
-            System.out.print("Case 1");
+            System.out.println(day + " is after " + inWorkWeek.getDay());
         }else if(day.compareTo(inWorkWeek.getDay())==0){
-            System.out.print("Case 0");
+            System.out.println(day + " is the same day as " + inWorkWeek.getDay());
+
         }else{
-            System.out.print("Case -1");
+            System.out.println(day + " is before " + inWorkWeek.getDay());
         }
     }
 
     public void printDay()
     {
-        System.out.print(day);
+        System.out.println(day);
     }
 
     public WorkEnum getDay()
