@@ -8,8 +8,51 @@ import java.util.Scanner;
  */
 
 public class PasswordVerifier{
+    private String pw;//passoword var. shorted to pw for quicker typing.
 
-    public static void main(String[] args) {
-        
+    PasswordVerifier(String pw)//Password constructor.
+    {
+        this.pw = pw;
+    }
+     
+    //@return true
+    public boolean testPassword()
+    {
+        boolean hasUC = false;//has Uppercase flag
+        boolean hasLC = false;//has Lowercase flag
+        boolean hasN = false;//has Number flag
+
+        if(pw.length() < 8)//checks password length.
+        {
+            return false;
+        }
+
+        for(int i=0;i<pw.length();i++)//Iterates over every char in password.
+        {
+            char c = pw.charAt(i);
+
+            if(Character.isUpperCase(c))//char is uppercase
+            {
+                hasUC = true;
+            }
+
+            if(Character.isLowerCase(c))//char is lowercase
+            {
+                hasLC = true;
+            }
+
+            if(Character.isDigit(c))//char is number
+            {
+                hasN = true;
+            }
+        }
+
+        if(hasUC && hasLC && hasN)// checks if flags are set to true.
+        {
+            return true;
+        }else{
+            return false;
+        }
+
     }
 }
