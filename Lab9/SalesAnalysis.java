@@ -53,7 +53,42 @@ public class SalesAnalysis {
 
     public void writeOutput()
     {
-        System.out.println(totalList.get(0));
+        int weekCount = 0;
+        double min = totalList.get(0);//initialized to week 1 to start
+        int minWeek = 1;
+        double max = 0;
+        int maxWeek = 0;
+        double total = 0;
+
+        System.out.print("\n");
+        for(double week : totalList)
+        {
+            weekCount++;
+            total += week;
+
+            if(week > max)
+            {
+                max = week;
+                maxWeek = weekCount;
+            }
+            if(week < min)
+            {
+                min = week;
+                minWeek = weekCount;
+            }
+
+            System.out.println("Week #" + weekCount + " Info");
+            System.out.printf("Total Sales: $%,.2f\n", week);
+            System.out.printf("Avg Daily Sales for Week: $%,.2f\n", week / 7);
+            System.out.print("\n");
+        }
+
+        System.out.printf("Total Sales for all Weeks: $%,.2f\n", total);
+        System.out.printf("Avg Weekly Sales : $%,.2f\n", total / weekCount);
+        System.out.println("Week #" + maxWeek + " had the Highest amount of sales");
+        System.out.println("Week #" + minWeek + " had the lowest amount of sales");
+
+        System.out.print("\n");
     }
     
 }

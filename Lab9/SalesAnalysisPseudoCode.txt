@@ -3,7 +3,47 @@ Lab 9 Sales Analysis Pseudocoding
 
 public class SalesAnalysis
     public void processFile()
-    public void setArrayListElement(String[] inArray)
+        if(inFile.hasNextLine())
+        {
+            week = inFile.nextline();
+            weekArray = week.split(",");
+
+            setArrayListElement(weekArray);
+        } 
+        
+    private void setArrayListElement(String[] inArray)
+        for(num : inArray)
+        {
+            total += num;
+        }
+    totalList.add(total);
+
     public void writeOutput()
 
+        for(week : totalList)
+        {
+            weekCount++;
+            if(week > max)
+            {
+                max = week.index();
+            }
+            if(week < min)
+            {
+                min = week.index();
+            }
+        }
+
+        System.out.println("Week #" + weekCount + " Info");
+        System.out.printf("Total Sales: $%,.2f\n", week);
+        System.out.printf("Avg Daily Sales for Week: $%,.2f\n", week / 7);
+        System.out.print("\n");
+
+
 SalesAnalysisDemo
+    System.out.print("What is the path to SalesData.txt");
+    file = getInput.next();
+
+    SalesAnalysis SalesFile = new SalesAnalysis(file);
+
+    SalesFile.processFile();
+    SalesFile.writeOutput();
