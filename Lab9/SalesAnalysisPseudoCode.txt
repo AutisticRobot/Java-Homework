@@ -1,3 +1,9 @@
 Lab 9 Sales Analysis Pseudocoding
 
 
+public class SalesAnalysis
+    public void processFile()
+    public void setArrayListElement(String[] inArray)
+    public void writeOutput()
+
+SalesAnalysisDemo

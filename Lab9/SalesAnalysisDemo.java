@@ -1,3 +1,5 @@
+import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
 
 /*
@@ -7,12 +9,22 @@ import java.util.Scanner;
  * @since 5/4/2023, Tyler M. Kormann, v1.0
  */
 public class SalesAnalysisDemo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException{
         Scanner getInput = new Scanner(System.in);
         String file;
 
         System.out.print("\n\nEnter the path to the SalesData.txt file: ");//asks the user for the text file for input. two line brakes for styling.
         file = getInput.next();
+
+        if(new File(file).exists())
+        {
+            SalesAnalysis salesFile = new SalesAnalysis(file);
+
+            salesFile.processFile();
+            salesFile.writeOutput();
+        }else{
+            System.out.println("File Does Not Exist");
+        }
 
         
     }
