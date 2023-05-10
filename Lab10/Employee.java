@@ -14,6 +14,21 @@ private int hireYear;
 private String idNum;  
     
 
+//constructors
+public Employee()
+{
+    super();
+    hireYear = 0;
+    idNum = "onboarding";
+}
+
+public Employee(String name, int hireYear, String idNum)
+{
+    super(name);
+    this.hireYear = hireYear;
+    this.idNum = idNum;
+}
+
 //based on idNum - a unique entry in a fictional database
 public boolean equals (Object o)
 {

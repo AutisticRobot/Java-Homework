@@ -5,7 +5,7 @@
  * @version v1.0
  * @since 5/8/2023, Tyler M. Kormann v1.0
  */
-public class Person
+public class Person extends PersonInterface
 {
 
 
@@ -21,12 +21,7 @@ public Person(String name)
     this.name = name;
 }
 
-/*
-public <Methods per PersonInterface>()
-{
 
-}
-*/
 
 
 }
