@@ -9,7 +9,7 @@ public class PersonInterface
 {
 
 
-final private int CURRENT_YEAR = 2023;
+final int CURRENT_YEAR = 2023;
 private String name;
 
 

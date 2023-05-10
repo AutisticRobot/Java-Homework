@@ -43,4 +43,11 @@ public boolean equals (Object o)
     }
     return isEqual;
 }
+
+public int getServiceYears()
+{
+    return CURRENT_YEAR - hireYear;
+}
+
+public 
 }
