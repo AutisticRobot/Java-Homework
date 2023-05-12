@@ -44,10 +44,43 @@ public boolean equals (Object o)
     return isEqual;
 }
 
+//Getters
+//@return int years that emplyee has been in service
 public int getServiceYears()
 {
     return CURRENT_YEAR - hireYear;
 }
+//@return int year emplyee was hired
+public int getHireYear()
+{
+    return hireYear;
+}
+//@return String ID number of the emplyee
+public String getIdNum()
+{
+    return idNum;
+}
 
-public 
+public void setHireYear(int inYear)
+{
+    hireYear = inYear;
+}
+
+public void setIdNum(String inIdNum)
+{
+    idNum = inIdNum;
+}
+
+
+public String toString()
+{
+    String output;
+    output += "Name: " + super.toString;
+    output += "ID Number: " + idNum;
+    output += "Year Hired: " + hireYear;
+    output += "Years Of Service: " + getServiceYears();
+    return output;
+}
+
+
 }
