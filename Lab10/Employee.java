@@ -74,8 +74,8 @@ public void setIdNum(String inIdNum)
 
 public String toString()
 {
-    String output;
-    output += "Name: " + super.toString;
+    String output = "";
+    output += "Name: " + super.toString();
     output += "ID Number: " + idNum;
     output += "Year Hired: " + hireYear;
     output += "Years Of Service: " + getServiceYears();
