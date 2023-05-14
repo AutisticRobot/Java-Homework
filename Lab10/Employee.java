@@ -75,10 +75,10 @@ public void setIdNum(String inIdNum)
 public String toString()
 {
     String output = "";
-    output += "Name: " + super.toString();
-    output += "ID Number: " + idNum;
-    output += "Year Hired: " + hireYear;
-    output += "Years Of Service: " + getServiceYears();
+    output += super.toString();
+    output += "\nID Number: " + idNum;
+    output += "\nYear Hired: " + hireYear;
+    output += "\nYears Of Service: " + getServiceYears();
     return output;
 }
 
