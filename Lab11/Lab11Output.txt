@@ -1,0 +1,18 @@
+Enter an int (whole number) for the numerator (ie 3): 2
+Enter an int (whole number) for the denominator, but don't enter 0: 3
+With numerator 2 and denominator 3 the result is: 0.667
+Enter y to calculate another number or enter n to stop: y
+Enter an int (whole number) for the numerator (ie 3): 3.4
+try running again, this time use integers for num and denom
+Thanks for using RationalDemo, CU soon
+
+Enter an int (whole number) for the numerator (ie 3): 7
+Enter an int (whole number) for the denominator, but don't enter 0: 0
+That’s not kewl, I said not to divide by zero
+Thanks for using RationalDemo, CU soon
+
+Enter an int (whole number) for the numerator (ie 3): 1
+Enter an int (whole number) for the denominator, but don't enter 0: 3
+With numerator 1 and denominator 3 the result is: 0.333
+Enter y to calculate another number or enter n to stop: n
+Thanks for using RationalDemo, CU soon
