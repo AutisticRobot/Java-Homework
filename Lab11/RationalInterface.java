@@ -1,0 +1,7 @@
+/**
+ * RationalInterface
+ */
+public interface RationalInterface {
+
+    
+}
