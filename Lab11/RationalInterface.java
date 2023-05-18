@@ -4,7 +4,7 @@
 public interface RationalInterface {
 
     
-    public void doRational();
+    public void doRational() throws DivideByZeroException;
     public int setUserInput();
     public double calcRational();
 }

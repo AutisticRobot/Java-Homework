@@ -14,9 +14,12 @@ public class Rational implements RationalInterface
     }
 
     @Override
-    public void doRational()
+    public void doRational() throws DivideByZeroException
     {
-
+        if(numerator == 0 && denom == 0)
+        {
+            throw new DivideByZeroException("Cannot Divide By Zero.");
+        }
     }
 
     @Override
