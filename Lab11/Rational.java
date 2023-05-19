@@ -1,3 +1,6 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class Rational implements RationalInterface
 {
     
@@ -16,21 +19,35 @@ public class Rational implements RationalInterface
     @Override
     public void doRational() throws DivideByZeroException
     {
-        if(numerator == 0 && denom == 0)
+        numerator = setUserInput();
+        denom = setUserInput();
+
+        result = calcRational();
+
+        System.out.printf("With numerator %,.i and denominator %,.i, the result is %,.3f.", numerator, denom, result);
+    }
+
+    @Override
+    public int setUserInput() throws InputMismatchException
+    {
+        Scanner getInput = new Scanner(System.in);
+        if(getInput.hasNextInt())
         {
-            throw new DivideByZeroException("Cannot Divide By Zero.");
+            return getInput.nextInt();
+        }else{
+            throw new InputMismatchException();
         }
     }
 
     @Override
-    public int setUserInput()
+    public double calcRational() throws DivideByZeroException
     {
+        if(numerator == 0 && denom == 0)
+        {
+            throw new DivideByZeroException("Cannot Divide By Zero.");
+        }
 
-    }
-
-    @Override
-    public double calcRational()
-    {
+        return (double) numerator / denom;
 
     }
 
