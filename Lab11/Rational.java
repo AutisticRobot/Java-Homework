@@ -19,12 +19,14 @@ public class Rational implements RationalInterface
     @Override
     public void doRational() throws DivideByZeroException
     {
+        System.out.println("Set the Numerator: ");
         numerator = setUserInput();
+        System.out.println("Set the Denominator: ");
         denom = setUserInput();
 
         result = calcRational();
 
-        System.out.printf("With numerator %,.i and denominator %,.i, the result is %,.3f.", numerator, denom, result);
+        System.out.printf("\nWith numerator %,.i and denominator %,.i, the result is %,.3f.\n", numerator, denom, result);
     }
 
     @Override
