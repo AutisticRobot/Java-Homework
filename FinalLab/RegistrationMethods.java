@@ -47,11 +47,40 @@ public class RegistrationMethods implements RegistrationMethodsInterface
     @Override
     public void processTextToArrayList(ArrayList<CarOwner> inList)
     {
+        File inputFile = new File(inputFileName);
+        try {
+        getInput = new Scanner(inputFile);
+            
+        } catch (Exception e) {
+        }
+
+        getInput.nextLine();//throws away first Line.
+
+        do{
+            CarOwner nextObj = new CarOwner();
+            String[] curLine = getInput.nextLine().split(",");
+
+            nextObj.setLastName(curLine[0]);
+            nextObj.setFirstName(curLine[1]);
+            nextObj.setLicense(curLine[2]);
+            nextObj.setMonth(Integer.parseInt(curLine[3]));
+            nextObj.setYear(Integer.parseInt(curLine[4]));
+
+            inList.add(nextObj);
+        }while(getInput.hasNext());
+        getInput.close();
     }
 
     @Override
     public void printArrayListToFile(ArrayList<CarOwner> inList, String inMsg)
     {
+        File outFile = new File(outputFileName);
+        try
+        {
+            PrintWriter printOut = new PrintWriter(outFile);
+        }catch (Exception e){
+            
+        }
     }
 
     @Override

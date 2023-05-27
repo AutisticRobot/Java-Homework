@@ -6,13 +6,13 @@ import java.io.Serializable;
  * @version v1.0
  * @since 5/24/2023, Tyler M. Kormann, v1.0
  */
-public class carOwner extends Citizen implements CarOwnerInterface{
+public class CarOwner extends Citizen implements CarOwnerInterface{
 
 String license;
 int month;
 int year;
 
-public carOwner()
+public CarOwner()
 {
     setFirstName("No");
     setLastName("Name");
@@ -20,7 +20,7 @@ public carOwner()
     month = 0;
     year = 0;
 }
-public carOwner(String inFirst, String inLast, String inLicense, int inYear, int inMonth)
+public CarOwner(String inLast, String inFirst, String inLicense, int inMonth, int inYear)
 {
     setFirstName(inFirst);
     setLastName(inLast);
@@ -73,7 +73,7 @@ public int compareTo(Object o){
     int temp = -1;
     if(o != null && getClass() == o.getClass())
     {
-        carOwner copy = (carOwner)o;
+        CarOwner copy = (CarOwner)o;
         if((year*12+month) < (copy.year*12+copy.month))
         {
             temp = -1;
