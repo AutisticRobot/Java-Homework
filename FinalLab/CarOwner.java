@@ -91,8 +91,8 @@ public String toString()
     String output = "";
 
     output += super.toString();
-    output +=  "\t";
-    output += license + "\t";
+    output +=  "\t\t";
+    output += license + "\t\t";
     output += month + "/" + year;
 
     return output;
