@@ -1,0 +1,21 @@
+***With TBDs***
+Athlete		Event Name
+Sam Swimmer		Swimming
+Joe Boxer		Boxing
+Harry Harpoon		TBD
+TBD		400m Sprint
+
+***Before sorting events***
+Athlete		Event Name
+Sam Swimmer		Swimming
+Joe Boxer		Boxing
+Harry Harpoon		Javelin
+Tommy Track		400m Sprint
+
+***After sorting events***
+Athlete		Event Name
+Tommy Track		400m Sprint
+Joe Boxer		Boxing
+Harry Harpoon		Javelin
+Sam Swimmer		Swimming
+
